@@ -1,13 +1,21 @@
 public class Main {
         public static void main(String[] args) {
 
-      //  first_task();
+        first_task();
         System.out.println();
-     //   first_task_extra();
+        first_task_extra();
+       System.out.println();
+       second_task_part1();
+       System.out.println();
+         second_task_part2();
+           System.out.println();
+         second_task_extra();
+           System.out.println();
+          third_task_part1();
         System.out.println();
-       // second_task_part1();
+            third_task_part2();
             System.out.println();
-            second_task_part2();
+            third_task_part3();
         }
         static void first_task() {
 
@@ -75,10 +83,72 @@ public class Main {
             }
 
     static void second_task_part2() {
+            double salary = 100;
+            int numbers = 30;
+            double salary_owner = salary/2;
+            double salary_other = salary_owner/2/numbers;
+            double salary_cap = salary_owner/2+salary_other;
+            System.out.println ("Владелец корабля получает: " + salary_owner);
+        System.out.println ( "Капитан корабля получает: " + salary_cap);
+                System.out.println ("Члены команды корабля получают: " + salary_other);
 
+            if ((salary_owner+salary_cap+salary_other*(numbers-1))==salary) {
+                System.out.println ("Расчет верен");}
+                else {
+                    System.out.println ("Расчет неверен");
 
+                }
+            }
+
+    static void second_task_extra() {
+        System.out.println ("😏");
+    }
+
+    static void third_task_part1() {
+            int a = 10;
+            int b = 13;
+
+            if (a==b) {
+                System.out.println ("a==b");
+            }
+            if (a>b) {
+                System.out.println ("a>b");
+            }
+        if (a<b) {
+            System.out.println ("a<b");
+        }
 
     }
-            }
+    static void third_task_part2() {
+
+            int a = 100;
+        if (a>10) {
+            System.out.println ("больше 10");
+        }
+        if (a<100) {
+            System.out.println ("меньше 100");
+        }
+        if (a/2 > 20) {
+            System.out.println ("результат деления на 2 больше 20 ");
+        }
+        if (a>5 && a<=40) {
+            System.out.println ("значение переменной между 5 и 40 включительно");
+        }
+        if (a<5 || a>40) {
+            System.out.println ("значение переменной меньше 5 или больше 40");
+        }
+
+    }
+    static void third_task_part3() {
+        int a =13;
+        int b =13;
+        if ((a+b)%2==0) {
+            System.out.println("maybe a and b are even");}
+        else {
+            System.out.println("some variable is odd");
+        }
+    }
+    }
+
 
 
